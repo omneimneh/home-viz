@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeViz – plan, furnish & visualise</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="topbar"></header>
+      <aside id="left"></aside>
+      <main id="views" class="layout-split">
+        <div id="plan-pane"></div>
+        <div id="view-pane">
+          <div id="view3d"></div>
+          <div id="view-toolbar"></div>
+          <div id="walk-hint" style="display: none">
+            <div class="crosshair"></div>
+            <div class="walk-msg unlocked">Click the view to look around</div>
+            <div class="walk-msg locked-msg">WASD / arrows move · Shift run · Q/E turn · click a surface to select it · Esc to release the mouse</div>
+          </div>
+        </div>
+      </main>
+      <aside id="right"></aside>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
